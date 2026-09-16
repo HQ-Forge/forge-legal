@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge — Support</title>
+  <style>
+    :root {
+      --primary: #FF6B35;
+      --secondary: #F7931E;
+      --bg: #F8FAFC;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --border: #2a2f3a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+    }
+    .header h1 { margin: 0; font-size: 32px; font-weight: 800; letter-spacing: 0.02em; }
+    .header p { margin: 10px 0 0; font-size: 15px; opacity: 0.92; }
+    main {
+      flex: 1;
+      max-width: 620px;
+      width: 100%;
+      margin: -24px auto 0;
+      padding: 0 24px 48px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .card h2 .icon {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+    }
+    .card p { margin: 0 0 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card a { color: var(--primary); }
+    .path {
+      display: inline-block;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 3px 9px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .email-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 12px;
+      padding: 13px 26px;
+      margin-top: 2px;
+    }
+    .muted { color: var(--muted); font-size: 14px; }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 24px;
+    }
+    .footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🔥</div>
+    <h1>Forge</h1>
+    <p>Support &amp; Help</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2><span class="icon">✉️</span>Contact us</h2>
+      <p>Email us and we will get back to you. You do not need a Forge account to reach us.</p>
+      <p><a class="email-btn" href="mailto:hq.forgeapp@gmail.com">hq.forgeapp@gmail.com</a></p>
+      <p class="muted">We aim to answer general questions within 2 business days. Reports of abuse are reviewed within 24 hours.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">💬</span>Get help from inside the app</h2>
+      <p>The fastest way to reach us is the built-in support form, which attaches your app version and device details so we can debug without a back-and-forth:</p>
+      <p><span class="path">Settings → Support → Contact Support</span></p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🚩</span>Report someone</h2>
+      <p>If another member's name, photo or behaviour is inappropriate, you can report them from their profile or from your Friends list:</p>
+      <p><span class="path">Open their profile → ⋮ → Report User</span></p>
+      <p>Pick a reason, add any detail that helps, and choose whether to block them at the same time. Reports are confidential — the person you report is never told who reported them. Every report is reviewed within 24 hours, and we remove content or accounts that break our <a href="terms-and-conditions.html">Terms &amp; Conditions</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🛡️</span>Block someone</h2>
+      <p>Blocking removes someone from your friends, hides you from their search results, and stops them sending you friend requests, nudges or kudos:</p>
+      <p><span class="path">Open their profile → ⋮ → Block User</span></p>
+      <p>You can see everyone you have blocked, and unblock them, at <span class="path">Settings → Privacy &amp; Tracking → Blocked Users</span>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🗑️</span>Delete your account</h2>
+      <p>You can delete your account and all of its data from inside the app at any time:</p>
+      <p><span class="path">Settings → Danger Zone → Delete Account</span></p>
+      <p>This permanently removes your profile, workout history, weekly summaries, friends and uploaded photos. It cannot be undone.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📄</span>Policies</h2>
+      <p>Read our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Questions? Contact us at <a href="mailto:hq.forgeapp@gmail.com">hq.forgeapp@gmail.com</a></p>
+  </footer>
+</body>
+</html>
